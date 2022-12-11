@@ -1,0 +1,158 @@
+
+.wrapper{
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    padding: 50px; 
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    background-color: rgb(173, 28, 206);
+    z-index: 100;
+}
+
+.header__container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu{
+    font-size: 0;
+}
+
+.menu__item{
+    position: relative;
+    display: inline-block;
+}
+.menu__item:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.menu__link{
+    color: #fff;
+    font-size: 22px;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.sub-menu{
+    background-color: red;
+    padding: 15px;
+    min-width: 180px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-menu__item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.sub-menu__link{
+    font-size: 22px;
+}
+
+
+
+
+.main__container{
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 15px;
+}
+
+
+.box-text{
+    text-align: center;
+}
+
+.items{
+    border: rgba(0, 0, 0, 0.556) 6px solid;
+    text-align: center;
+}
+
+.block__item--aqua{
+    background-color: aqua;
+    height: 70px;
+    
+}
+.block__item--pink{
+    background-color: pink;
+    height: 70px;
+}
+.block__item--yelow{
+    background-color: yellow;
+    height: 70px;
+}
+
+
+
+
+
+.items__relative .block__item--yelow{
+    position: relative;
+    top: 0px;
+    right: 0px
+    
+}
+
+.items__relative .block__item--pink{
+    position: relative;
+    top: -12px;
+    left: 22px;   
+    z-index: 12;
+}
+
+.items__relative .block__item--aqua{
+    position: relative;
+    top: -44px;
+    left:42px;
+}
+
+
+
+.items__absolute{
+    position: relative;
+    overflow: hidden;
+}
+
+.items__absolute .block__item--yelow{
+    position: relative;
+    top: 20px;
+    z-index: 2;
+   
+    
+}
+
+.items__absolute .block__item--pink{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 100%;
+       
+}
+
+.items__absolute .block__item--aqua{
+   position:absolute;
+   top:0;
+   right: 0;
+   width: 20%;
+   
+}
+
+.items__scticky .block__item--yelow{
+    position: sticky;
+    top: 0;
+}
